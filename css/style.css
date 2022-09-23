@@ -11,3 +11,17 @@ header{
 footer{
     background-color: #ED6335;
 }
+
+.container ul {
+    list-style-type: none;
+    text-align: center;
+   
+}
+.container li{
+    display: inline;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+#imagen {
+    text-align: center;
+}
