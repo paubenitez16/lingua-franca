@@ -1,13 +1,75 @@
-*{
-padding:0;
-margin:0; 
-font-family: 'Source Serif Pro', serif;
-}
-
-header{
+/* -------------------------------- variables ------------------------------- */
+/* ---------------------------- Estilos globales ---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Source Serif Pro', serif; }
+  
+  /* --------------------------------- import --------------------------------- */
+  /* --------------------------------- Header --------------------------------- */
+  header {
+    display: flex;
+    width: 100%;
+    padding: 1%;
+    align-items: center;
     background-color: #ED6335;
-}
+    justify-content: space-between;
+    align-items: center; }
+  
+  /* --------------------------------- navbar --------------------------------- */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500; }
+  
+  .navbar-item a {
+    color: #252525;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 600; }
+  
+  .navbar-item a:link {
+    color: #252525; }
+  
+  .navbar-item a:visited {
+    color: #252525; }
+  
+  .navbar a:hover {
+    color: #da0b84;
+    cursor: pointer;
+    transition: all 0.5s  ease; }
 
-footer{
-    background-color: #ED6335;
-}
+    footer {
+        text-align: center;
+        padding: 2%;
+        font-style: italic;
+        background-color: #ED6335; }
+      
+      article {
+        display: flex;
+        justify-content: center; }
+        article ul {
+          display: flex;
+          justify-content: center; }
+          article ul li {
+            padding: 10%;
+            color: #252525;
+            font-size: 32px; }
+            article ul li i {
+              color: #ffff; }
+      
+      footer p {
+        margin: 0%;
+        color: black;
+        padding: 12px; }
+      
+      footer.container {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
