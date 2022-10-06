@@ -1,44 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/566941887a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/p.png">
+    <!-- BOOTSTRAP LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="../css/style.css">
    <title>Lingua Franca</title>
 </head>
-
 <body>
+
     <header>
-    <div class="container">
-        <h1 id="imagen"><a href="/index.html"><img width="100px" src="../images/p.png"></a></h1>
-        <nav> 
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="sobre-nos.html">SOBRE NOSOTROS</a></li>
-                <li><a href="cursos.html">CURSOS</li>
-                <li><a href="sedes.html">SEDES</a></li>
-                <li><a href="novedades.html">NOVEDADES</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class=" navbar-expand-lg navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-item active">
+                <a href="../index.html"><img width="70px" src="../images/p.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar">
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="../index.html">Inicio </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="Pages/sobre-nos.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="Pages/cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="Pages/sedes.html">Sedes</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="Pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="Pages/contacto.html">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-    </div>
-</header>
+    </header>
    
 <main>
+    <section id="sobre-nos">
+        <div class="container " img-container"> </div>
+        <h2>Sobre Nosotros</h2>
+    </section>
 
     <h2> Esto es el main de sobre nosotros</h2>
 
 </main>
 
-   <footer> 
-        <div class="container">
-            <p> &copy;Lingua Francas - codo a codo 2022</p>
-        </div>
-    </footer>
+<footer class="pie-de-página">
+    <article>
+        <ul>
+            <li>
+                <a href=".."> <i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href=".."><i class="fab fa-youtube "></i></a>
+            </li>
+            <li>
+                <a href=".."><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href=".."><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li>
+                <a href=".."><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </article>
+    <div class="container">
+        <p> &copy;Lingua Franca - Codo a Codo 2022</p>
+    </div>
+</footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
