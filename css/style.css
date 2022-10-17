@@ -2,6 +2,7 @@
 padding:0;
 margin:0; 
 font-family: 'Roboto', serif;
+box-sizing: border-box;
 }
 
 header{
@@ -39,7 +40,8 @@ p{
     margin-left: 30px;
     margin-right: 30px;
 }
-img{
+/* imagenes de "nosotros*/
+.zoom>img{
     height: 200px;
     width: 300px;
     border-radius: 10px;
@@ -65,11 +67,13 @@ img{
 .zoom:hover{
     transform: scale(1.2);
 }
+/*Párrafo de "nosotros"*/
 .flex-container2{
     margin-left: 150px;
     margin-right: 150px;
     justify-content: center;
 }
+/*novedades*/
 .contenedor_ex{
     display: flex;
     flex-direction: row;
@@ -85,7 +89,8 @@ img{
     border-radius: 5px;
 }
 .tarjeta>img{
-    width: 100%;
+    width: 298px;
+    height: 160px;
 }
 .tarjeta a {
     border: 1px solid #ED6335;
@@ -103,4 +108,103 @@ img{
 }
 .tarjeta a:hover{
     background-color: #f84206;
+}
+/*cursos*/
+/*íconos de arriba de todo*/
+.contenedor_cursos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.tarjeta2{
+    width: 200px;
+    height: 240px;
+    background-color: #ED6335;
+    border: 1px solid rgb(193, 176, 176);
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+.tarjeta2>img{
+    width: 200px;
+    height: 200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*sección con cada idioma*/
+.idiomas{
+    width: 100%;
+    height:100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+}
+.item1{
+    grid-column: 1/ span 3;
+    padding: 10px;
+}
+.item2{
+    grid-column: 4/span 2;
+    padding: 10px;
+}
+@media only screen and (max-width: 900px){
+    [class*='item'] {
+        grid-column: 1/5;
+    }
+}
+.item3{
+    grid-column: 1/span 5;
+    padding: 10px;
+}
+.item3>table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.item3> table td, table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.item3> table tr:nth-child(even){background-color: #f2f2f2;}
+.item3>table tr:hover {background-color: #ddd;}
+.item3> table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ED6335;
+  }
+/*Menú desplegable de la barra de navegación*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ED6335;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.dropdown-content a:hover{
+    background-color: #f84206;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }
