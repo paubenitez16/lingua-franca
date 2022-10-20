@@ -13,33 +13,53 @@
 <body>
 
     <header>
-        <div class="container">
-            <h1 id="imagen"><a href="../index.html"><img width="100px" src="../images/p.png"></a></h1>
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="sobre-nos.html">SOBRE NOSOTROS</a></li>
+        <nav class=" navbar-expand-lg navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-item active">
+                <a href="../index.html"><img width="70px" src="./images/p.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav navbar">
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="index.html">Inicio </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="pages/sobre-nos.html">Sobre nosotros</a>
+                    </li>
                     <div class="dropdown">
-                      <li class="dropbtn"><a href="cursos.html">CURSOS</li>
+                        <li class="nav-item active">
+                            <a class="nav-link navbar-item" href="pages/cursos.html">Cursos</a>
+                        </li> 
                         <div class="dropdown-content">
-                          <a href="cursos.html#Español">Español</a>
-                          <a href="cursos.html#Inglés">Inglés</a>
-                          <a href="cursos.html#Portugués">Portugués</a>
-                          <a href="cursos.html#Francés">Francés</a>
+                          <a href="pages/cursos.html#Español">Español</a>
+                          <a href="pages/cursos.html#Inglés">Inglés</a>
+                          <a href="pages/cursos.html#Portugués">Portugués</a>
+                          <a href="pages/cursos.html#Francés">Francés</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                       <li class="dropbtn"><a href="./pages/sedes.html">SEDES</a></li>
-                       <div class="dropdown-content">
-                          <a href="./pages/sedes.html#Microcentro">Microcentro</a>
-                          <a href="./pages/sedes.html#Belgrano">Belgrano</a>
-                          <a href="./pages/sedes.html#Caballito">Caballito</a>
-                       </div>
+                     <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="pages/sedes.html">Sedes</a>
+                      </li>
+                        <div class="dropdown-content">
+                            <a href="pages/sedes.html#Microcentro">Microcentro</a>
+                            <a href="pages/sedes.html#Belgrano">Belgrano</a>
+                            <a href="pages/sedes.html#Caballito">Caballito</a>
+                        </div>  
                     </div>
-                    <li><a href="novedades.html">NOVEDADES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="pages/novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link navbar-item" href="pages/contacto.html">Contactanos</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
 </header>
    
 <main>
