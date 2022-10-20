@@ -1,3 +1,4 @@
+/*general*/
 *{
 padding:0;
 margin:0; 
@@ -49,8 +50,8 @@ p{
 }
 .flex-container1{
     background-color: #ed6335af;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     padding: 10;
     display: flex;
     flex-wrap: wrap;
@@ -72,21 +73,83 @@ p{
     margin-left: 150px;
     margin-right: 150px;
     justify-content: center;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 900px){
+    [class='flex-container2'] {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 /*novedades*/
-.contenedor_ex{
+/*Título*/
+#seccion1{
+    background-color:#ED6335;
+}
+/*Exámenes de inglés*/
+#seccion2{
+    background-color: #f06d42;
+}
+
+.contenedor_ex_ing{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 30px;
+    column-gap: 20px;
+    background-color:#f06d42;
 }
+/*Exámenes de español*/
+#seccion3{
+    background-color: #f1835e;
+}
+.contenedor_ex_es{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 20px;
+    background-color:#f1835e;
+}
+/*Exámenes de portugués*/
+#seccion4{
+    background-color: #f38f6d;
+}
+.contenedor_ex_port{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 20px;
+    background-color:#f38f6d;
+}
+/*Exámenes de francés*/
+#seccion5{
+    background-color: #f7ac93;
+}
+.contenedor_ex_fr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 20px;
+    background-color:#f7ac93;
+}
+/*tarjetas*/
 .tarjeta{
     width: 300px;
     height: 300px;
     border: 1px solid rgb(193, 176, 176);
     border-radius: 5px;
+    box-shadow: 10px 10px 10px rgb(65, 64, 64);
+    background-color: aliceblue;
+}
+.tarjeta:hover{
+    transform: scale(1.1);
 }
 .tarjeta>img{
     width: 298px;
@@ -127,6 +190,10 @@ p{
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    box-shadow: 10px 10px 10px rgb(197, 196, 196);
+}
+.tarjeta2:hover{
+    transform: scale(1.1);
 }
 .tarjeta2>img{
     width: 200px;
@@ -138,7 +205,7 @@ a{
 }
 
 
-/*sección con cada idioma*/
+/*sección con cada idioma. El item1 es la imagen, el item2, la descripción  y el intem3, la tabla*/
 .idiomas{
     width: 100%;
     height:100%;
@@ -207,4 +274,53 @@ a{
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+/*Sedes*/
+ul{
+    padding: 30px;
+    color: #474646;
+    
+}
+li{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+b{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    padding: 15px;
+}
+.grid-container2>.item1{
+    grid-column: 1/ span 3;
+    box-shadow: 5px 3px 10px rgb(184, 182, 182);
+}
+.grid-container2>.item2{
+    grid-column: 4/ span 5;
+    box-shadow: 5px 3px 10px rgb(184, 182, 182)
+}
+@media only screen and (max-width: 900px){
+    .grid-container2>.item1{
+        grid-column: 1/5;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .grid-container2>.item1>img{
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 900px){
+    .grid-container2>.item2{
+        width: 100%;
+        grid-column:1/5;
+    }
+}
+@media only screen and (max-width: 900px){
+    .grid-container2>.item2>iframe{
+        width:100%;
+    }
 }
